@@ -1,7 +1,7 @@
 {
   "_fallback": {
     "label": "Unrouted",
-    "jiraEpic": "PROD-DEFAULT",
+    "jiraEpic": "PROD-244",
     "slackChannel": "C0BDZB5U03B",
     "issueType": "Task",
     "defaultStatus": "Triage",
