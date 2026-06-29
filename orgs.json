@@ -1,10 +1,13 @@
 {
   "public": {
     "displayName": "Economic Mobility Center",
-    "products": ["ccmr-weekly-workbook"]
+    "products": ["ccmr-weekly-workbook", "enrollment-pipeline-navigator"]
   },
   "garland-isd": {
     "displayName": "Garland ISD",
     "products": ["ccmr-weekly-workbook"]
+  },
+  "internal": {
+    "displayName": "Admin View",
+    "products": ["ccmr-weekly-workbook", "enrollment-pipeline-navigator"]
   }
-}
