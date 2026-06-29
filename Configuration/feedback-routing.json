@@ -1,20 +1,18 @@
 {
   "_fallback": {
-    "label": "Unrouted","support-portal",
-    "jiraEpic": "PROD-244",
+    "label": "Unrouted",
+    "jiraEpic": "PROD-DEFAULT",
     "slackChannel": "C0BDZB5U03B",
-    "defaultStatus": "Triage"
+    "issueType": "Task",
+    "defaultStatus": "Triage",
+    "labels": ["unrouted", "feedback"]
   },
   "ccmr-weekly-workbook": {
-    "label": "CCMR Weekly Workbook","support-portal",
+    "label": "CCMR Weekly Workbook",
     "jiraEpic": "PROD-3",
     "slackChannel": "C0BDZB5U03B",
-    "defaultStatus": "Triage"
-  },
-  "enrollment-pipeline-navigator": {
-    "label": "Enrollment Pipeline Navigator","support-portal",
-    "jiraEpic": "PROD-209",
-    "slackChannel": "CC0BDZB5U03B?",
-    "defaultStatus": "Triage"
+    "issueType": "Task",
+    "defaultStatus": "Triage",
+    "labels": ["ccmr", "feedback"]
   }
 }
