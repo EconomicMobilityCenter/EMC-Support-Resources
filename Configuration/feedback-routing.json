@@ -1,6 +1,6 @@
 {
   "_fallback": {
-    "label": "Unrouted","support-portal
+    "label": "Unrouted","support-portal",
     "jiraEpic": "PROD-244",
     "slackChannel": "C0BDZB5U03B",
     "defaultStatus": "Triage"
@@ -12,7 +12,7 @@
     "defaultStatus": "Triage"
   },
   "enrollment-pipeline-navigator": {
-    "label": "Enrollment Pipeline Navigator","support-portal
+    "label": "Enrollment Pipeline Navigator","support-portal",
     "jiraEpic": "PROD-209",
     "slackChannel": "CC0BDZB5U03B?",
     "defaultStatus": "Triage"
