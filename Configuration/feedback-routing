@@ -1,0 +1,20 @@
+{
+  "_fallback": {
+    "label": "Unrouted","support-portal
+    "jiraEpic": "PROD-244",
+    "slackChannel": "C0BDZB5U03B",
+    "defaultStatus": "Triage"
+  },
+  "ccmr-weekly-workbook": {
+    "label": "CCMR Weekly Workbook","support-portal",
+    "jiraEpic": "PROD-3",
+    "slackChannel": "C0BDZB5U03B",
+    "defaultStatus": "Triage"
+  },
+  "enrollment-pipeline-navigator": {
+    "label": "Enrollment Pipeline Navigator","support-portal
+    "jiraEpic": "PROD-209",
+    "slackChannel": "CC0BDZB5U03B?",
+    "defaultStatus": "Triage"
+  }
+}
