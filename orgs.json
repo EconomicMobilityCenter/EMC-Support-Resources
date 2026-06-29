@@ -9,5 +9,5 @@
   },
   "internal": {
     "displayName": "Admin View",
-    "products": ["ccmr-weekly-workbook", "enrollment-pipeline-navigator"]
+    "products": ["All"]
   }
