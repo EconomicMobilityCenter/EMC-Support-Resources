@@ -10,4 +10,8 @@
   "internal": {
     "displayName": "Admin View",
     "products": ["all"]
+  },
+  "dallas-college": {
+    "displayName": "Dallas College",
+    "products": ["enrollment-pipeline-navigator"]
   }
