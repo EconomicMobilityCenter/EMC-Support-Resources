@@ -1,5 +1,5 @@
 ---
-title: "EPN FAQs"
+title: "FAQs"
 orgs: ["all"]
 product: "enrollment-pipeline-navigator"
 category: "Training"
