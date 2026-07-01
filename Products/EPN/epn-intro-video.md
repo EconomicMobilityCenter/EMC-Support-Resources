@@ -1,5 +1,5 @@
 ---
-title: "Erollment Pipeline Intro Video"
+title: "Intro Video"
 orgs: ["all"]
 product: "enrollment-pipeline-navigator"
 category: "Training"
