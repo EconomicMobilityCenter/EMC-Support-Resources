@@ -14,5 +14,12 @@
     "issueType": "Task",
     "defaultStatus": "Triage",
     "labels": ["ccmr", "feedback"]
-  }
+  },
+  "enrollment-pipeline-navigator": {
+    "label": "Enrollment Pipeline Navigator",
+    "jiraEpic": "PROD-209",
+    "slackChannel": "C0BDZB5U03B",
+    "issueType": "Task",
+    "defaultStatus": "Triage",
+    "labels": ["EPN", "feedback"]
 }
