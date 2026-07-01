@@ -1,5 +1,5 @@
 ---
-title: "Enrollment Pipeline One Pager"
+title: "One-Page Orientation"
 orgs: ["all"]
 product: "enrollment-pipeline-navigator"
 category: "Training"
