@@ -4,7 +4,7 @@ orgs: ["all"]
 product: "enrollment-pipeline-navigator"
 category: "Training"
 group: "Enrollment Pipeline Navigator"
-order: 1
+order: 3
 type: "article"
 published: true
 ---
