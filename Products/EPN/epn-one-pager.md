@@ -9,4 +9,5 @@ type: "article"
 published: true
 ---
 
-![Enrollment Pipeline One Pager](../Artifacts/EPN-Onepager.pdf)
+![Enrollment Pipeline One Pager](/Artifacts/EPN-Onepager.pdf)
+
