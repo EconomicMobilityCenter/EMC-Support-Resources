@@ -58,9 +58,6 @@ A student is **TSI Met overall** when **both** Math and ELAR are met. A "Met by"
 ### Why did a number change from last week?
 The workbook refreshes weekly from upstream sources, so changes are expected and usually good news — new scores posted, an application got submitted, a FAFSA was completed, or a record was corrected at the source. The "Updated" dates on the Menu tab show how current each feed is. If a change looks wrong rather than just new, report it (see below).
 
-### What do the colors mean?
-**Navy** indicates on-track / met, and **amber** indicates not met or off-track. Red/green combinations are deliberately avoided for color-vision accessibility, and the palette is meant to feel informative rather than judgmental.
-
 ### Where does each data point come from?
 Each tab indicates its sources, and the Menu tab lists source feeds with their last-updated dates. Data flows from district and college systems through the Regional Data Hub into the workbook. 
 
