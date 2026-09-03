@@ -137,6 +137,4 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 | HB3 IBC Status | `ibc_hb3` | Whether the student earned at least one Industry-Based Certification (HB3 indicator). | Early Warning file (District) | 🟢 Live |
 | A-F Career Status  | `career_af` | Career A-F accountability indicator. | Early Warning file (District) | 🟢 Live |
 
-
-
-
+---
