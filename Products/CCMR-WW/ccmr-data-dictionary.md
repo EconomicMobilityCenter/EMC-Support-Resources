@@ -2,11 +2,10 @@
 title: "CCMR Weekly Workbook - Data Dictionary"
 orgs: ["all"]
 product: "ccmr-weekly-workbook"
-category: "Reference"
+category: "Training"
 group: "CCMR Weekly Workbook"
-order: 1
+order: 5
 type: "article"
-link: ""
 published: true
 ---
 
