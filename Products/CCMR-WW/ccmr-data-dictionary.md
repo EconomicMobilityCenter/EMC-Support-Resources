@@ -7,7 +7,7 @@ group: "CCMR Weekly Workbook"
 order: 1
 type: "article"
 link: ""
-published: false
+published: true
 ---
 
 This dictionary explains every column in the CCMR Weekly Workbook: the workbook column you see, the underlying data field, what it means in plain terms, where the data comes from, and whether it is available today.
@@ -132,8 +132,8 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 | Highest OnRamps College Grade | `highest_onramps_grade` | Student's highest OnRamps letter grade. | OnRamps file (District) | 🟢 Live |
 | College Prep Type | `college_Prep` | The college prep course pathway the student is enrolled in through Texas College Bridge. |Texas College Bridge (District) | 🟡 Not yet availabl |
 | College Prep Type 2 | `college_prep2` | A second college prep pathway, if the student is enrolled in more than one. | Texas College Bridge (District) | 🟡 Not yet availabl |
-| College Prep Math Status | ` ` | The student's status in the college prep math course (Texas College Bridge), used toward TSI math readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
-| College Prep ELAR Status | `` | The student's status in the college prep ELAR course (Texas College Bridge), used toward TSI ELAR readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
+| College Prep Math Status |  | The student's status in the college prep math course (Texas College Bridge), used toward TSI math readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
+| College Prep ELAR Status |  | The student's status in the college prep ELAR course (Texas College Bridge), used toward TSI ELAR readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
 | HB3 CCMR | `ccmr_hb3` | CCMR indicator under HB3 (met both ELA and math, excluding certain cases). | Early Warning file (District) | 🟢 Live |
 | HB3 IBC Status | `ibc_hb3` | Whether the student earned at least one Industry-Based Certification (HB3 indicator). | Early Warning file (District) | 🟢 Live |
 | A-F Career Status  | `career_af` | Career A-F accountability indicator. | Early Warning file (District) | 🟢 Live |
