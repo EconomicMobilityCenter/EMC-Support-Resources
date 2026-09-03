@@ -29,7 +29,7 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 
 | Column Name | Data field | What it means | Source | Status |
 |---|---|---|---|---|
-| Grade | `grade_level` | Student's current grade level. | Roster (District) | 🟢 Live |
+| Grade | `cohort_year` | Student's current grade level. | Roster (District) | 🟢 Live |
 | Cohort Year | `ADD COLUMN NAME` | the year they are expected to graduate, not necessarily the year they actually do. Students stay tied to their cohort for tracking even if they graduate early or late.  | Roster (District) | 🟢 Live |
 | Eco Dis | `eco_dis` | Whether the student is economically disadvantaged. | Roster (District) | 🟢 Live |
 | Sped | `sped` | Whether the student is in special education. | Roster (District) | 🟢 Live |
@@ -49,11 +49,11 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 | U.S. History EOC | `us_history_eoc` | U.S. History STAAR EOC result. | STAAR EOC (District) | 🟡 Not yet available |
 | On Track to Graduate | `on_track_to_graduate` | Whether the student is on track to graduate. | Not yet sourced | 🔴 Not yet available |
 | # of credits | `total_hs_credits` | Total high school credits earned. | Transcript (District) | 🟢 Live |
-| Unweighted GPA | `gpa (HS GPA)` | Student's high school grade point average. | Roster (District) | 🟢 Live |
-| Weighted GPA | `ADD COLUMN NAME` | Student's high school grade point average on a weighted scale. | Roster (District) | 🔴 Not yet available |
-| Work Ready `Y` | `work_ready` | Whether the student is designated work-ready. | Roster (District) | 🟢 Live |
-| Counselor `C` | `counselor_name` | Name of the student's assigned counselor. | Roster (District) | 🟢 Live |
-| Advisor `Z` | `advisor_name` | Name of the student's assigned advisor. | Roster (District) | 🟢 Live |
+| Unweighted GPA | `gpa` | Student's high school grade point average. | Roster (District) | 🟢 Live |
+| Weighted GPA | `weighted_gpa` | Student's high school grade point average on a weighted scale. | Roster (District) | 🔴 Not yet available |
+| Work Ready | `work_ready` | Whether the student is designated work-ready. | Roster (District) | 🟢 Live |
+| Counselor | `counselor_name` | Name of the student's assigned counselor. | Roster (District) | 🟢 Live |
+| Advisor | `advisor_name` | Name of the student's assigned advisor. | Roster (District) | 🟢 Live |
 
 ## Assessments (TSIA2/SAT/ACT)
 
@@ -61,13 +61,13 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 |---|---|---|---|---|
 | TSI Met By Assessment | `tsi_met_by_assessment` | Overall TSI status: Met only if both math and ELAR are met, otherwise Not Met. | Calculated | 🟢 Live |
 | TSI Math Met | `tsi_math_met` | Whether the student met the TSI math bar (1 = met, 0 = not met). | Calculated | 🟢 Live |
-| TSI Math Met by | `ADD COLUMN NAME` | Which test met eligibility. | Calculated | 🟢 Live |
+| TSI Math Met by | `computed` | Which assessment the student met the TSI math bar with (TSIA2, SAT, or ACT). | Calculated | 🟢 Live |
 | SAT Math `AD` | `sat_math` | SAT math score. | Assessment files (District) | 🟢 Live |
 | ACT Math `AE` | `act_math` | ACT math score. | Assessment files (District) | 🟢 Live |
 | TSIA Math Score  | `tsia2_math_crc` | TSIA2 math college-readiness score. | Assessment files (District) | 🟢 Live |
 | TSIA Math Diagnostic  | `tsia2_math_diag_level` | TSIA2 math diagnostic level. | Assessment files (District) | 🟢 Live |
 | TSI ELAR Met  | `tsi_elar_met` | Whether the student met the TSI ELAR bar (1 = met, 0 = not met). | Calculated | 🟢 Live |
-| TSI ELAR Met by | `ADD COLUMN NAME` | Which test met eligibility. | Calculated | 🟢 Live |
+| TSI ELAR Met by | `computed` | Which assessment the student met the TSI ELAR bar with (TSIA2, SAT, or ACT). | Calculated | 🟢 Live |
 | SAT Reading and Writing | `sat_ebrw` | SAT Evidence-Based Reading & Writing score (also reads satela). | Assessment files (District) | 🟢 Live |
 | ACT English | `act_english` | ACT English score. | Assessment files (District) | 🟢 Live |
 | TSIA ELAR Score | `tsia2_elar_crc` | TSIA2 ELAR college-readiness score. | Assessment files (District) | 🟢 Live |
@@ -83,13 +83,13 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 | Academic College Standing | `dual_credit_standing` | Student's current academic standing in dual credit. | Enrollment File (Dallas College) | 🟢 Live |
 | Dual Credit GPA | `dual_credit_gpa` | Student's cumulative dual-credit GPA. | Enrollment File (Dallas College) | 🟢 Live |
 | College Credits Enrolled | `dual_credit_enrolled` | Dual-credit hours the student is currently or upcoming enrolled in. | Courses file (Dallas College) | 🟢 Live |
-| Associate Degree Earned `AV` | `associate_degree` | Whether the student earned an associate degree (AA or AS). | Credential files (District + Dallas College) | 🟢 Live |
+| Associate Degree Earned | `associate_degree` | Whether the student earned an associate degree (AA or AS). | Credential files (District + Dallas College) | 🟢 Live |
 
 ## Career readiness & CTE
 
 | Column Name | Data field | What it means | Source | Status |
 |---|---|---|---|---|
-| IBC Completed| `ibc_latest_aligned` | The student's most recent aligned Industry-Based Certification. | Certifications file (District) | 🟢 Live |
+| IBC Completed | `ibc_latest_aligned` | The student's most recent aligned Industry-Based Certification. | Certifications file (District) | 🟢 Live |
 | Program of Study (name) | `pos_name` | Name of the student's aligned CTE Program of Study. | CTE files (District) | 🟢 Live |
 | Program of Study Status | `pos_status` | Student's CTE Program of Study status. | CTE files (District) | 🟢 Live |
 | Level I Certification Earned | `credential_level_1` | Whether the student earned a Level 1 certificate (C1). | Credential files (District + Dallas College) | 🟢 Live |
@@ -127,14 +127,13 @@ This dictionary explains every column in the CCMR Weekly Workbook: the workbook 
 
 | Column Name | Data field | What it means | Source | Status |
 |---|---|---|---|---|
-| Highest AP Score `BU` | `highest_ap_score` | Student's highest AP exam score across all AP subjects. | Advanced Placement file (District) | 🟢 Live |
-| Highest IB Score `BV` | `highest_ib_score` | Student's highest IB score. | Not yet sourced | 🔴 Not yet available |
-| Highest OnRamps College Grade `BW` | `highest_onramps_grade` | Student's highest OnRamps letter grade. | OnRamps file (District) | 🟢 Live |
-| College Prep Type | `ADD TEXt` | ADD TEXT | unknown | 🔴 Not yet available |
-| College Prep Type 2 | `ADD TEXt` | ADD TEXT | unknown | 🔴 Not yet available |
-| College Prep Math Status | `ADD TEXt` | ADD TEXT | unknown | 🔴 Not yet available |
-| College Prep ELAR Status | `ADD TEXt` | ADD TEXT | unknown | 🔴 Not yet available |
-| College Prep Type | `ADD TEXt` | ADD TEXT | unknown | 🔴 Not yet available |
+| Highest AP Score | `highest_ap_score` | Student's highest AP exam score across all AP subjects. | Advanced Placement file (District) | 🟢 Live |
+| Highest IB Score | `highest_ib_score` | Student's highest IB score. | Not yet sourced | 🔴 Not yet available |
+| Highest OnRamps College Grade | `highest_onramps_grade` | Student's highest OnRamps letter grade. | OnRamps file (District) | 🟢 Live |
+| College Prep Type | `college_Prep` | The college prep course pathway the student is enrolled in through Texas College Bridge. |Texas College Bridge (District) | 🟡 Not yet availabl |
+| College Prep Type 2 | `college_prep2` | A second college prep pathway, if the student is enrolled in more than one. | Texas College Bridge (District) | 🟡 Not yet availabl |
+| College Prep Math Status | ` ` | The student's status in the college prep math course (Texas College Bridge), used toward TSI math readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
+| College Prep ELAR Status | `` | The student's status in the college prep ELAR course (Texas College Bridge), used toward TSI ELAR readiness. | Texas College Bridge (District) | 🟡 Not yet availabl |
 | HB3 CCMR | `ccmr_hb3` | CCMR indicator under HB3 (met both ELA and math, excluding certain cases). | Early Warning file (District) | 🟢 Live |
 | HB3 IBC Status | `ibc_hb3` | Whether the student earned at least one Industry-Based Certification (HB3 indicator). | Early Warning file (District) | 🟢 Live |
 | A-F Career Status  | `career_af` | Career A-F accountability indicator. | Early Warning file (District) | 🟢 Live |
