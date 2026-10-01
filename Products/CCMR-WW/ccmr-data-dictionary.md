@@ -1,5 +1,5 @@
 ---
-title: "CCMR Weekly Workbook - Data Dictionary"
+title: "Data Dictionary"
 orgs: ["all"]
 product: "ccmr-weekly-workbook"
 category: "Training"
