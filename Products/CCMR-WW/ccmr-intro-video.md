@@ -10,4 +10,6 @@ link: "PLACEHOLDER_INTRO_VIDEO_URL"
 published: true
 ---
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1180927395?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="CCMR OnTrack Weekly Explainer Marketing Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;">
+  <iframe src="https://www.youtube-nocookie.com/embed/aHqpndvaHUk?rel=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="CCMR Weekly Workbook Explainer Video" allowfullscreen></iframe>
+</div>
