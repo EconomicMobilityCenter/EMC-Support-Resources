@@ -16,6 +16,7 @@
     "products": ["enrollment-pipeline-navigator"],
     "productURLs": {
         "enrollment-pipeline-navigator": "https://webapps.dcccd.edu/tools/emcdisplay"
+    }
   },
   "corpus-christi-isd": {
     "displayName": "Corpus Christi ISD",
