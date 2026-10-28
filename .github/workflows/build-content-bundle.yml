@@ -1,0 +1,51 @@
+# Save in the EMC-Support-Resources repo as .github/workflows/build-content-bundle.yml
+name: Build content bundle
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "Configuration/content-bundle.json"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Generate bundle
+        run: |
+          node <<'EOF'
+          const fs = require("fs"), path = require("path");
+          const files = {};
+          const walk = (dir) => {
+            for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+              if (e.name === ".git" || e.name === ".github") continue;
+              const full = path.join(dir, e.name);
+              const rel = path.relative(".", full).split(path.sep).join("/");
+              if (e.isDirectory()) { walk(full); continue; }
+              if (rel.startsWith("Configuration/") || e.name === "README.md") continue;
+              if (e.name.endsWith(".md") || e.name === "ccmr-faqs-md") files[rel] = fs.readFileSync(full, "utf8");
+            }
+          };
+          walk(".");
+          const sorted = Object.fromEntries(Object.keys(files).sort().map((k) => [k, files[k]]));
+          const read = (p) => (fs.existsSync(p) ? fs.readFileSync(p, "utf8") : "");
+          const bundle = {
+            generatedAt: new Date().toISOString(),
+            files: sorted,
+            orgsRaw: read("Configuration/orgs.json"),
+            feedbackRoutingRaw: read("Configuration/feedback-routing.json"),
+          };
+          fs.writeFileSync("Configuration/content-bundle.json", JSON.stringify(bundle, null, 2) + "\n");
+          EOF
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Configuration/content-bundle.json
+          git diff --cached --quiet || git commit -m "Update content bundle [skip ci]"
+          git push
