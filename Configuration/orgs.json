@@ -22,3 +22,7 @@
     "displayName": "Corpus Christi ISD",
     "products": ["ccmr-weekly-workbook"]
   }
+"duncanville-isd": {
+  "displayName": "Duncanville ISD",
+  "products": ["ccmr-weekly-workbook"]
+}
